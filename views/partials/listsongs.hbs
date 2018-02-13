@@ -1,4 +1,4 @@
-<table class="ui table">
+<table class="ui fixed table">
   <thead>
     <tr>
       <th>Song</th>
@@ -16,8 +16,9 @@
           {{artist}}
         </td>
         <td>
-          <a href="/playlist/{{../playlist.id}}/deletesong/{{id}}" class="ui tiny red button">Delete Song</a>
+          <a href="/playlist/{{../playlist.id}}/deletesong/{{id}}"><i class="large trash icon"></i></a>
         </td>
+      
       </tr>
     {{/each}}
   </tbody>

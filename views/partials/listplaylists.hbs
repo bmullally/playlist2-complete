@@ -1,0 +1,9 @@
+<h2 class="ui header">
+      {{title}}
+    </h2>
+    <p> Total Duration: {{CalculateDuration songs}}</p>
+   {{#if songs}}
+    <a href="/playlist/{{id}}"> <i class="large folder open icon"></i> </a>
+  {{/if}}
+    <a href="/deletePlayList/{{id}}" ><i class="large trash icon"></i></a>
+ 

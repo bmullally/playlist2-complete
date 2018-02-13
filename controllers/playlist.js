@@ -15,12 +15,22 @@ const playlist = {
   },
 
   deleteSong(request, response) {
+
     const playlistId = request.params.id;
     const songId = request.params.songid;
     logger.debug(`Deleting Song ${songId} from Playlist ${playlistId}`);
     playlistStore.removeSong(playlistId, songId);
     response.redirect('/playlist/' + playlistId);
+    
+  },
+  
+    deletePlayList(request, response) {
+    const playlistId = request.params.id;
+    logger.debug(`Deleting Playlist ${playlistId}`);
+    playlistStore.removePlaylist(playlistId);
+    response.redirect('/dashboard');
   },
 };
+
 
 module.exports = playlist;
