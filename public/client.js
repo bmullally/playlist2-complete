@@ -5,3 +5,11 @@ $('img').mouseover(function() {
 $('img').mouseout(function() {
   $(this).attr('src','assets/beethoven3.jpg');
 });
+
+$("#delplaylist").click(function() {
+  return confirm('Really delete this playlist?');
+});
+
+$("#delsong").click(function() {
+  return confirm('Really delete this song?');
+});
