@@ -1,4 +1,5 @@
-<h2 class="ui header">
+{{#each playlists}}
+  <section class="ui stacked segment"><h2 class="ui header">
       {{title}}
     </h2>
     <p> Total Duration: {{CalculateDuration songs}}</p>
@@ -6,4 +7,5 @@
     <a href="/playlist/{{id}}"> <i class="large folder open icon"></i> </a>
   {{/if}}
     <a href="/deletePlayList/{{id}}" id="delplaylist" ><i class="large trash icon"></i></a>
- 
+   </section>
+{{/each}} 
