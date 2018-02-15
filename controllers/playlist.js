@@ -24,12 +24,7 @@ const playlist = {
     
   },
   
-    deletePlayList(request, response) {
-    const playlistId = request.params.id;
-    logger.debug(`Deleting Playlist ${playlistId}`);
-    playlistStore.removePlaylist(playlistId);
-    response.redirect('/dashboard');
-  },
+
 };
 
 
